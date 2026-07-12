@@ -54,15 +54,25 @@ export function ProjectCard({ project }: { project: ProjectData }) {
   return (
     <Card className="h-full flex flex-col bg-card overflow-hidden group hover:border-accent/50 transition-colors duration-300">
       <CardHeader className="p-0 border-b border-border/50 relative overflow-hidden bg-secondary/5 aspect-video flex items-center justify-center">
-        {/* Placeholder image generator based on title */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20 z-0" />
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={`Illustration representing the ${project.title} project`}
+            className="absolute inset-0 h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <>
+            {/* Placeholder image generator based on title */}
+            <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20 z-0" />
 
-        {/* Decorative pattern based on project type */}
-        <div className="z-10 w-24 h-24 rounded-2xl bg-white shadow-sm border border-border flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-          <span className="text-3xl font-bold text-accent">
-            {project.title.substring(0, 2)}
-          </span>
-        </div>
+            {/* Decorative pattern based on project type */}
+            <div className="z-10 w-24 h-24 rounded-2xl bg-white shadow-sm border border-border flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+              <span className="text-3xl font-bold text-accent">
+                {project.title.substring(0, 2)}
+              </span>
+            </div>
+          </>
+        )}
 
         {project.featured && (
           <div className="absolute top-4 left-4 z-20">

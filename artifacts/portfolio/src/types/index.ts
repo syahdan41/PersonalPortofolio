@@ -21,6 +21,7 @@ export interface ProjectData {
   challenge?: string;
   solution?: string;
   impact?: string;
+  image?: string;
   technologies: string[];
   featured?: boolean;
   githubUrl?: string;

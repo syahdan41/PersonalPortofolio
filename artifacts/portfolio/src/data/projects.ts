@@ -1,4 +1,13 @@
 import { ProjectData } from "../types";
+import proj1Image from "../assets/projects/proj-1.jpg";
+import proj2Image from "../assets/projects/proj-2.jpg";
+import proj3Image from "../assets/projects/proj-3.jpg";
+import proj4Image from "../assets/projects/proj-4.jpg";
+import proj5Image from "../assets/projects/proj-5.jpg";
+import proj6Image from "../assets/projects/proj-6.jpg";
+import proj7Image from "../assets/projects/proj-7.jpg";
+import proj8Image from "../assets/projects/proj-8.jpg";
+import proj9Image from "../assets/projects/proj-9.jpg";
 
 export const projectsData: ProjectData[] = [
   {
@@ -14,6 +23,7 @@ export const projectsData: ProjectData[] = [
     impact: "Delivered a significantly more reliable financing approval pipeline with clean, resilient API integrations connecting to enterprise CRM systems.",
     technologies: ["OutSystems", "REST APIs", "OutSystems BPT"],
     featured: true,
+    image: proj1Image,
   },
   {
     id: "proj-2",
@@ -27,6 +37,7 @@ export const projectsData: ProjectData[] = [
     impact: "Streamlined the onboarding and communication processes for SME insurance partners across both native mobile and Progressive Web App (PWA) workflows.",
     technologies: ["OutSystems", "Firebase Cloud Messaging", "PWA"],
     featured: true,
+    image: proj2Image,
   },
   {
     id: "proj-3",
@@ -39,6 +50,7 @@ export const projectsData: ProjectData[] = [
       "Built a robust offline-first capability that stores data locally and performs automatic synchronization upon network reconnection. Implemented token-based API authentication and complex SQL-based validation and reporting logic on the device.",
     impact: "Enabled faster, more accurate stock reconciliation across all warehouses regardless of network conditions.",
     technologies: ["OutSystems", "SQL", "Token-based Auth", "Offline Data Sync"],
+    image: proj3Image,
   },
   {
     id: "proj-4",
@@ -52,6 +64,7 @@ export const projectsData: ProjectData[] = [
     impact: "Successfully validated end-to-end Flazz card reads inside a hybrid mobile app, unlocking new technical capabilities for NFC payments research.",
     technologies: ["Cordova", "JNI", "Android", "C/Java"],
     featured: true,
+    image: proj4Image,
   },
   {
     id: "proj-5",
@@ -64,6 +77,7 @@ export const projectsData: ProjectData[] = [
     impact: "Delivered centralized, real-time warehouse data management, dramatically improving operational visibility.",
     technologies: ["REST APIs", "React", "Node.js"],
     githubUrl: "https://github.com/syahdan41/WarehouseStock.git",
+    image: proj5Image,
   },
   {
     id: "proj-6",
@@ -76,6 +90,7 @@ export const projectsData: ProjectData[] = [
     impact: "Successfully automated a previously fully manual document creation workflow, saving administrative hours and reducing errors.",
     technologies: ["React.js", "Frontend Architecture"],
     githubUrl: "https://github.com/syahdan41/Sura-Link.git",
+    image: proj6Image,
   },
   {
     id: "proj-7",
@@ -88,6 +103,7 @@ export const projectsData: ProjectData[] = [
     impact: "Digitized a previously manual, paper-based voting process, increasing participation and ensuring immediate result tabulation.",
     technologies: ["React Native", "Mobile Development"],
     githubUrl: "https://github.com/syahdan41/E-VOTING.git",
+    image: proj7Image,
   },
   {
     id: "proj-8",
@@ -100,6 +116,7 @@ export const projectsData: ProjectData[] = [
     impact: "Provided growers with real-time, actionable visibility into plant nutrition conditions, enabling proactive agricultural management.",
     technologies: ["React Native", "Firebase (BaaS)", "IoT Integration"],
     githubUrl: "https://github.com/syahdan41/SmartFarmingIoT.git",
+    image: proj8Image,
   },
   {
     id: "proj-9",
@@ -112,5 +129,6 @@ export const projectsData: ProjectData[] = [
     impact: "Created a centralized hub that enabled much faster, more reliable information distribution to the student body.",
     technologies: ["React", "React Native"],
     githubUrl: "https://github.com/syahdan41/DigiTelco.git",
+    image: proj9Image,
   },
 ];
