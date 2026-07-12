@@ -2,11 +2,23 @@
 
 A premium, single-page personal portfolio application built with React, Vite, and Tailwind CSS.
 
+This is a standard, standalone Vite + React + TypeScript project. It has no dependency on Replit
+or any monorepo/workspace tooling and can be run anywhere Node.js is available.
+
 ## Getting Started
 
-1. Install dependencies: `npm install`
-2. Start development server: `npm run dev`
-3. Build for production: `npm run build`
+```bash
+npm install
+npm run dev
+```
+
+The dev server starts on `http://localhost:5173` by default.
+
+Other scripts:
+
+- `npm run build` — type-checked production build, output to `dist/`
+- `npm run preview` — preview the production build locally
+- `npm run typecheck` — run TypeScript in `--noEmit` mode
 
 ## Managing Content
 
@@ -22,8 +34,9 @@ This application uses a data-driven architecture. All content is localized in th
 
 ## Architecture & Styling
 
-- **Framework**: Vite + React 18
-- **Styling**: Tailwind CSS with CSS Custom Properties for theming
-- **Components**: `shadcn/ui` based functional components
+- **Framework**: Vite + React 19 + TypeScript
+- **Styling**: Tailwind CSS with CSS custom properties for theming (light/dark/system)
+- **Components**: `shadcn/ui`-based functional components (Radix UI primitives)
 - **Animations**: Framer Motion
 - **Form Handling**: React Hook Form + Zod
+- **Routing**: wouter
