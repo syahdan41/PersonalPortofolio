@@ -1,0 +1,775 @@
+i want you to create portofolio website based on my resume attached and you must follow this prompt
+
+# ROLE
+
+You are a Senior Staff Software Engineer, Senior UI/UX Designer, Product Designer, and Frontend Architect with over 15 years of experience building enterprise-grade web applications.
+
+Your task is to build a premium personal portfolio website for me from scratch.
+
+This is NOT a landing page.
+
+This is NOT a template portfolio.
+
+This should feel like a portfolio of an experienced Software Engineer working in enterprise software development.
+
+The codebase must be production-ready, clean, scalable, maintainable, and follow modern frontend engineering best practices.
+
+---
+
+# TECH STACK
+
+Use ONLY:
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript (Strict Mode)
+- TailwindCSS
+- shadcn/ui
+- Framer Motion
+- Lucide Icons
+- React Hook Form
+- Zod
+- next/image
+- next/font
+- ESLint
+- Prettier
+
+DO NOT use Bootstrap.
+
+DO NOT use Material UI.
+
+DO NOT use Chakra UI.
+
+DO NOT use CSS Modules.
+
+Use Tailwind utilities and reusable UI components.
+
+---
+
+# DESIGN STYLE
+
+The overall feeling should be:
+
+Modern
+
+Premium
+
+Minimalist
+
+Professional
+
+Enterprise
+
+Elegant
+
+Inspired by:
+
+- Stripe
+- Linear
+- Vercel
+- Raycast
+- Clerk
+
+DO NOT make it look like a gaming portfolio.
+
+DO NOT use cyberpunk.
+
+DO NOT use neon effects.
+
+DO NOT use excessive gradients.
+
+DO NOT overuse glassmorphism.
+
+The website should give the impression that the owner is an Enterprise Software Engineer.
+
+---
+
+# COLOR SYSTEM
+
+Primary
+
+#0F172A
+
+Secondary
+
+#1E293B
+
+Accent
+
+#2563EB
+
+Background
+
+#F8FAFC
+
+Card
+
+#FFFFFF
+
+Border
+
+#E2E8F0
+
+Success
+
+#10B981
+
+Error
+
+#EF4444
+
+Text Primary
+
+#0F172A
+
+Text Secondary
+
+#64748B
+
+---
+
+# TYPOGRAPHY
+
+Use
+
+Manrope
+
+for headings.
+
+Use
+
+Inter
+
+for body text.
+
+Spacing should follow an 8-point grid system.
+
+---
+
+# RESPONSIVENESS
+
+The website MUST be responsive.
+
+Support
+
+320px
+
+375px
+
+390px
+
+414px
+
+768px
+
+1024px
+
+1280px
+
+1536px
+
+1920px
+
+No horizontal scrolling.
+
+No layout breaking.
+
+No overflow.
+
+No CLS.
+
+No layout shifting.
+
+Test every component for responsive behavior.
+
+---
+
+# ACCESSIBILITY
+
+Follow WCAG AA.
+
+Semantic HTML.
+
+Keyboard accessible.
+
+Proper aria labels.
+
+Focus states.
+
+Contrast ratio must pass accessibility checks.
+
+---
+
+# PERFORMANCE
+
+Target Lighthouse Score
+
+Performance 95+
+
+Accessibility 100
+
+SEO 100
+
+Best Practices 100
+
+Optimize images.
+
+Lazy load where necessary.
+
+Avoid unnecessary re-renders.
+
+Use memoization only when needed.
+
+---
+
+# SEO
+
+Implement
+
+Metadata
+
+OpenGraph
+
+Twitter Card
+
+Sitemap
+
+Robots.txt
+
+JSON-LD Structured Data
+
+Canonical URL
+
+Dynamic metadata
+
+Proper heading hierarchy
+
+---
+
+# FOLDER STRUCTURE
+
+Use Feature-Based Architecture.
+
+Example:
+
+src/
+
+app/
+
+components/
+
+layout/
+
+sections/
+
+ui/
+
+data/
+
+hooks/
+
+lib/
+
+types/
+
+constants/
+
+styles/
+
+utils/
+
+assets/
+
+public/
+
+Every folder should have a clear responsibility.
+
+---
+
+# CLEAN CODE
+
+Use
+
+SOLID principles where applicable.
+
+Meaningful variable names.
+
+Meaningful function names.
+
+No anonymous functions unless appropriate.
+
+No duplicated code.
+
+No magic numbers.
+
+No hardcoded data inside components.
+
+Everything must be reusable.
+
+---
+
+# DATA MANAGEMENT
+
+Separate all portfolio data into
+
+src/data
+
+Create
+
+experience.ts
+
+projects.ts
+
+skills.ts
+
+education.ts
+
+certifications.ts
+
+social.ts
+
+navigation.ts
+
+The UI should only consume data from these files.
+
+I should be able to add a new project by editing only one file.
+
+---
+
+# COMPONENT STRUCTURE
+
+Create reusable components.
+
+Examples
+
+Navbar
+
+Footer
+
+HeroSection
+
+AboutSection
+
+ExperienceTimeline
+
+ProjectCard
+
+SkillsGrid
+
+CertificationCard
+
+ContactSection
+
+ThemeToggle
+
+ScrollProgress
+
+SectionTitle
+
+AnimatedContainer
+
+Every component must be independent.
+
+---
+
+# NAVIGATION
+
+Sticky Navbar
+
+Smooth scrolling
+
+Scroll spy
+
+Active section highlight
+
+Mobile navigation drawer
+
+---
+
+# ANIMATIONS
+
+Use Framer Motion.
+
+Animations must be subtle.
+
+Fade
+
+Slide
+
+Scale
+
+Micro interactions
+
+Card hover
+
+Button hover
+
+Duration
+
+200ms - 350ms
+
+Do NOT create distracting animations.
+
+---
+
+# DARK MODE
+
+Implement
+
+System Theme
+
+Dark Theme
+
+Light Theme
+
+Theme Toggle
+
+Persist theme in local storage.
+
+---
+
+# SECTIONS
+
+1. Hero
+
+Large headline
+
+Professional introduction
+
+Buttons
+
+Download CV
+
+LinkedIn
+
+GitHub
+
+Professional photo placeholder
+
+Animated scroll indicator
+
+---
+
+2. About
+
+Professional summary
+
+Years of experience
+
+Enterprise clients
+
+Projects delivered
+
+Quick statistics
+
+---
+
+3. Experience
+
+Timeline layout
+
+Company
+
+Role
+
+Duration
+
+Responsibilities
+
+Achievements
+
+Technologies used
+
+---
+
+4. Projects
+
+Modern card layout.
+
+Each project should contain
+
+Image
+
+Description
+
+Role
+
+Tech Stack
+
+Challenges
+
+Solution
+
+Impact
+
+GitHub
+
+Demo
+
+Featured badge if applicable
+
+---
+
+5. Skills
+
+Categorize into
+
+Frontend
+
+Backend
+
+Enterprise Development
+
+Mobile
+
+Database
+
+Cloud
+
+DevOps
+
+Tools
+
+Soft Skills
+
+Display them beautifully using badges/cards.
+
+---
+
+6. Certifications
+
+Timeline or card layout.
+
+Include year.
+
+Issuer.
+
+Certificate name.
+
+---
+
+7. Education
+
+University
+
+Degree
+
+Duration
+
+Relevant information.
+
+---
+
+8. Contact
+
+Email
+
+LinkedIn
+
+GitHub
+
+Contact form
+
+Validated using Zod.
+
+---
+
+# EXTRA FEATURES
+
+Command Palette
+
+CTRL + K
+
+Search sections.
+
+Smooth page transitions.
+
+Scroll progress indicator.
+
+Back to top button.
+
+Typing effect only if elegant.
+
+Project filtering.
+
+Animated statistics.
+
+Loading skeleton.
+
+404 page.
+
+Custom favicon.
+
+Custom cursor only if elegant.
+
+---
+
+# CONTENT
+
+Populate the website using the following resume information.
+
+Name:
+
+Syahdan Triantoro
+
+Title:
+
+Software Developer
+
+Professional Branding:
+
+Enterprise Software Engineer specializing in OutSystems, Enterprise Application Development, API Integration, Mobile Development, React, and Modern Web Technologies.
+
+Professional Summary:
+
+Software Developer specializing in enterprise application development using the OutSystems platform. Experienced in collaborating with cross-functional and international development teams to design, build, and maintain business-critical systems. Strong understanding of application architecture, data flow, API integration, and modern web technologies including JavaScript, Node.js, React, and mobile application development.
+
+Include the following companies in Experience:
+
+PT Ifabula Digital Kreasi
+
+Bank Syariah Indonesia
+
+Tokio Marine Indonesia
+
+FIF Group
+
+NFC Flazz Integration Research
+
+Tsuki Software House
+
+PT Rama Karya Digma
+
+PT Telkom Indonesia
+
+Include major achievements from each company.
+
+---
+
+Projects should include:
+
+Mortgage Financing Platform
+
+Mobile Insurance Platform
+
+Stock Opname Mobile App
+
+NFC Flazz Integration
+
+Warehouse Management System
+
+Sura-Link
+
+Voting Application
+
+IoT Plant Monitoring
+
+Organization News App
+
+Each project should have professional descriptions instead of bullet points.
+
+---
+
+Skills
+
+OutSystems
+
+React
+
+React Native
+
+Next.js
+
+JavaScript
+
+TypeScript
+
+Node.js
+
+REST API
+
+Firebase
+
+SQL
+
+Cordova
+
+JNI
+
+Git
+
+GitHub
+
+Responsive Design
+
+Enterprise Architecture
+
+API Integration
+
+Problem Solving
+
+Team Collaboration
+
+---
+
+SOCIAL LINKS
+
+LinkedIn
+
+GitHub
+
+Email
+
+Download CV button
+
+---
+
+# CODE QUALITY
+
+TypeScript Strict
+
+No any unless absolutely necessary.
+
+No inline styles.
+
+No duplicated components.
+
+Use reusable hooks.
+
+Use utility functions.
+
+Use interfaces.
+
+Prefer server components whenever possible.
+
+Client components only when necessary.
+
+---
+
+# DELIVERABLES
+
+Generate:
+
+Complete source code
+
+Responsive UI
+
+Folder structure
+
+README.md
+
+Installation guide
+
+Deployment guide
+
+Environment example if needed
+
+Clean comments
+
+Maintainable architecture
+
+Production-ready code
+
+No placeholders except profile image.
+
+Everything should look polished and ready for deployment.

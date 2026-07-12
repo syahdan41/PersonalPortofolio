@@ -1,0 +1,102 @@
+import { ProjectData } from "../types";
+
+export const projectsData: ProjectData[] = [
+  {
+    id: "proj-1",
+    title: "Mortgage Financing Platform",
+    role: "OutSystems Principal Developer",
+    description: "An enterprise mortgage financing system built on OutSystems for Bank Syariah Indonesia. As Principal Developer in an international team, I led the architectural refactoring of the platform to improve reliability and scalability.",
+    challenge: "The legacy Counter Offer workflow had severe logic inconsistencies and fragile API contracts that led to frequent failures in the financing pipeline.",
+    solution: "Refactored the application into a layered architecture according to OutSystems best practices. I redesigned the Counter Offer flow, implemented asynchronous processing with Business Process Technology (BPT), and built robust exception handling mechanisms.",
+    impact: "Delivered a significantly more reliable financing approval pipeline with clean, resilient API integrations connecting to enterprise CRM systems.",
+    technologies: ["OutSystems", "REST APIs", "OutSystems BPT"],
+    featured: true
+  },
+  {
+    id: "proj-2",
+    title: "Mobile Insurance Platform",
+    role: "Mobile Developer",
+    description: "A multilingual OutSystems mobile insurance app developed for Tokio Marine Indonesia, serving SME micro-insurance partners with seamless onboarding and quotation generation.",
+    challenge: "The business needed a way to deliver real-time engagement and securely share complex insurance quotations via WhatsApp to SME partners.",
+    solution: "Integrated Firebase Cloud Messaging (FCM) for push notifications, built dynamic ID/EN language switching, and implemented secure URL tokenization and encryption for quotation links. I also automated reward notifications using background timers.",
+    impact: "Streamlined the onboarding and communication processes for SME insurance partners across both native mobile and Progressive Web App (PWA) workflows.",
+    technologies: ["OutSystems", "Firebase Cloud Messaging", "PWA"],
+    featured: true
+  },
+  {
+    id: "proj-3",
+    title: "Stock Opname Mobile App",
+    role: "Mobile Developer",
+    description: "An offline-first mobile inventory tracking application built from scratch on the OutSystems platform for FIF Group's internal logistics operations.",
+    challenge: "Field inventory staff needed a reliable way to perform stock counting in warehouses where network connectivity was frequently unstable or entirely unavailable.",
+    solution: "Built a robust offline-first capability that stores data locally and performs automatic synchronization upon network reconnection. Implemented token-based API authentication and complex SQL-based validation and reporting logic on the device.",
+    impact: "Enabled faster, more accurate stock reconciliation across all warehouses regardless of network conditions.",
+    technologies: ["OutSystems", "SQL", "Token-based Auth", "Offline Data Sync"]
+  },
+  {
+    id: "proj-4",
+    title: "NFC Flazz Integration",
+    role: "Mobile/Native Integration Engineer",
+    description: "An R&D initiative to enable BCA Flazz NFC card reading capabilities directly within an OutSystems hybrid mobile application.",
+    challenge: "There was no existing bridge between the vendor's native NFC libraries (provided as ARM binaries) and a hybrid OutSystems application.",
+    solution: "Engineered a custom Cordova plugin from the ground up. I translated native vendor components via JNI (C to Java integration) and successfully converted the provided ARM native libraries into a working hybrid plugin architecture.",
+    impact: "Successfully validated end-to-end Flazz card reads inside a hybrid mobile app, unlocking new technical capabilities for NFC payments research.",
+    technologies: ["Cordova", "JNI", "Android", "C/Java"],
+    featured: true
+  },
+  {
+    id: "proj-5",
+    title: "Warehouse Management System",
+    year: "2023",
+    role: "Full-stack Developer",
+    description: "A full-stack web application designed to centralize and manage complex warehouse inventory operations and logistics workflows.",
+    challenge: "The warehouse previously relied on manual, disconnected data flows, leading to inefficiencies and inventory inaccuracies.",
+    solution: "Developed robust RESTful APIs to handle bidirectional data flow between the server and the client, and seamlessly integrated these backend services with a dynamic React frontend.",
+    impact: "Delivered centralized, real-time warehouse data management, dramatically improving operational visibility.",
+    technologies: ["REST APIs", "React", "Node.js"]
+  },
+  {
+    id: "proj-6",
+    title: "Sura-Link",
+    year: "2025",
+    role: "Frontend Developer",
+    description: "A specialized document generation and automation platform built for internal administrative workflows.",
+    challenge: "Official documents were being created entirely manually, a process that was exceptionally slow and highly prone to human error.",
+    solution: "Built an intuitive frontend interface using React.js that features dynamic form handling, live document previews, and streamlined data entry.",
+    impact: "Successfully automated a previously fully manual document creation workflow, saving administrative hours and reducing errors.",
+    technologies: ["React.js", "Frontend Architecture"]
+  },
+  {
+    id: "proj-7",
+    title: "Voting Application",
+    year: "2022",
+    role: "Developer",
+    description: "A mobile application designed to facilitate secure and accessible digital voting for organizational elections.",
+    challenge: "The organization needed a reliable, simple, and trustworthy digital voting platform for admin-defined polling options.",
+    solution: "Developed a cross-platform React Native application that allows authenticated users to securely cast their votes for options managed by an administrator interface.",
+    impact: "Digitized a previously manual, paper-based voting process, increasing participation and ensuring immediate result tabulation.",
+    technologies: ["React Native", "Mobile Development"]
+  },
+  {
+    id: "proj-8",
+    title: "IoT Plant Monitoring",
+    year: "2023",
+    role: "Front-end Developer",
+    description: "An IoT-connected mobile dashboard for monitoring plant nutrition and environmental conditions in real-time.",
+    challenge: "Growers needed a way to continuously monitor critical plant nutrition conditions from remote sensor data without being physically present.",
+    solution: "Built a highly responsive React Native interface that consumes live hardware sensor data securely backed by Firebase as a BaaS.",
+    impact: "Provided growers with real-time, actionable visibility into plant nutrition conditions, enabling proactive agricultural management.",
+    technologies: ["React Native", "Firebase (BaaS)", "IoT Integration"]
+  },
+  {
+    id: "proj-9",
+    title: "Organization News App",
+    year: "2021",
+    role: "Front-end Developer",
+    description: "A dedicated mobile news application developed for the telecommunications engineering student organization.",
+    challenge: "The student organization lacked an effective, centralized channel to distribute crucial telecom-engineering news and academic updates to its members.",
+    solution: "Collaborated with the student organization to design and build a dedicated, cross-platform news application tailored to the community's needs.",
+    impact: "Created a centralized hub that enabled much faster, more reliable information distribution to the student body.",
+    technologies: ["React", "React Native"]
+  }
+];
